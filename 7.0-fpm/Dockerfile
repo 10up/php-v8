@@ -15,8 +15,7 @@ RUN cd /tmp && fetch v8
 RUN cd /tmp/v8 && gclient sync
 
 # Setup GN
-RUN cd /tmp/v8 && tools/dev/v8gen.py -vv x64.release
-RUN cd /tmp/v8 && echo is_component_build = true >> out.gn/x64.release/args.gn
+RUN cd /tmp/v8 && tools/dev/v8gen.py -vv x64.release -- is_component_build=true
 
 # Build
 RUN cd /tmp/v8 && ninja -C out.gn/x64.release/
