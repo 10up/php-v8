@@ -1,4 +1,4 @@
-# PHP V8 Docker Image
+# PHP V8 Docker Images
 
 This repository contains Docker images for running PHP with [V8](https://developers.google.com/v8/) and [V8Js](https://github.com/phpv8/v8js). Images are intended to be used with the [NodeifyWP environment](https://github.com/10up/nodeifywp-environment).
 
